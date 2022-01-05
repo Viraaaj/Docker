@@ -1,0 +1,18 @@
+- Create a file named Dockerfile
+
+- FROM: used to import image from docker hub: https://hub.docker.com/search?type=image
+- COPY: copy all files in current directory into the app directory of image
+- If we use WORKDIR then we dont need to use /app/app.js in CMD (if we create copy in /app) 
+- CMD: to execute a command
+
+- docker build -t [tag name] [. represent current directory]
+docker build -t hello-docker .
+
+- To check all images on machine
+docker image ls
+
+- docker run tag-name
+docker run hello-docker
+
+- pull docker
+docker pull viraj1299/hello-docker
